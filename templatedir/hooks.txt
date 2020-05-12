@@ -1,0 +1,17 @@
+
+1，下载 commit-msg
+hooks 目录下必须要有 commit-msg脚本 来为 gerrit 生成提交需要的 change-id
+commit-msg 下载地址为: http://gerrit地址/tools/hooks/commit-msg
+例如:
+http://192.9.230.37:9080/tools/hooks/commit-msg
+
+
+2，安装 commit-msg
+在支持 git 命令的命令行中输入如下命令
+git config --global init.templatedir $template_dir
+例如:
+使用如下 windows 默认路径设置会因为反斜杆而被转义
+git config --global init.templatedir D:\BananaPI\git_tools\templatedir
+请使用如下格式
+git config --global init.templatedir D:/BananaPI/git_tools/templatedir
+
